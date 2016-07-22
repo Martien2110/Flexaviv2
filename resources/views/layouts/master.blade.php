@@ -14,16 +14,16 @@
         <link href="{{ asset('back-end/vendors/bower_components/google-material-color/dist/palette.css') }}" rel="stylesheet">
         
         <!-- CSS -->
-        <link href="{{ asset('back-end/css/app.min.1.css" rel="stylesheet">
-        <link href="{{ asset('back-end/css/app.min.2.css" rel="stylesheet"> 
+        <link href="{{ asset('back-end/css/app.min.1.css') }}" rel="stylesheet">
+        <link href="{{ asset('back-end/css/app.min.2.css') }}" rel="stylesheet"> 
         
     </head>
     <body data-ma-header="teal">
         <header id="header" class="media">
             <div class="pull-left h-logo">
-                <a href="index.html" class="hidden-xs">
-                    Material   
-                    <small>admin extended</small>
+                <a href="/index" class="hidden-xs">
+                    Flexavi 
+                    <small>Optimale Administratie</small>
                 </a>
                 
                 <div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">
@@ -108,7 +108,7 @@
                 </li>
                 <li class="dropdown hm-profile">
                     <a data-toggle="dropdown" href="">
-                        <img src="img/profile-pics/1.jpg" alt="">
+                        <img src="{{ asset('back-end/img/profile-pics/1.jpg')}}" alt="">
                     </a>
                     
                     <ul class="dropdown-menu pull-right dm-icon">
@@ -122,7 +122,7 @@
                             <a href=""><i class="zmdi zmdi-settings"></i> Settings</a>
                         </li>
                         <li>
-                            <a href=""><i class="zmdi zmdi-time-restore"></i> Logout</a>
+                            <a href="/logout"><i class="zmdi zmdi-time-restore"></i> Logout</a>
                         </li>
                     </ul>
                 </li>
@@ -142,7 +142,7 @@
                 <ul class="tab-nav tn-justified tn-icon m-t-10" data-tab-color="teal">
                     <li><a class="sua-messages" href="#sua-messages" data-toggle="tab"><i class="zmdi zmdi-email"></i></a></li>
                     <li><a class="sua-notifications" href="#sua-notifications" data-toggle="tab"><i class="zmdi zmdi-notifications"></i></a></li>
-                    <li><a class="sua-tasks" href="#sua-tasks" data-toggle="tab"><i class="zmdi zmdi-view-list-alt"></i></a></li>
+                    <!-- <li><a class="sua-tasks" href="#sua-tasks" data-toggle="tab"><i class="zmdi zmdi-view-list-alt"></i></a></li> -->
                 </ul>
 
                 <div class="tab-content">
@@ -152,63 +152,10 @@
                             <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
                             <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
                         </ul>
-
-                        <div class="list-group lg-alt c-overflow">
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
-                                </div>
-
-                                <div class="media-body">
-                                    <div class="lgi-heading">David Villa Jacobs</div>
-                                    <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Candice Barnes</div>
-                                    <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Jeannette Lawson</div>
-                                    <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Darla Mckinney</div>
-                                    <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Rudolph Perez</div>
-                                    <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
-                                </div>
-                            </a>
-                        </div>
-
+<!-- 
                         <a href="" class="btn btn-float btn-danger m-btn">
                             <i class="zmdi zmdi-plus"></i>
-                        </a>
+                        </a> -->
                     </div>
                     <div class="tab-pane fade" id="sua-notifications">
                         <ul class="sua-menu list-inline list-unstyled palette-Orange bg">
@@ -216,59 +163,6 @@
                             <li><a href=""><i class="zmdi zmdi-long-arrow-tab"></i> View all</a></li>
                             <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
                         </ul>
-
-                        <div class="list-group lg-alt c-overflow">
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
-                                </div>
-
-                                <div class="media-body">
-                                    <div class="lgi-heading">David Villa Jacobs</div>
-                                    <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Candice Barnes</div>
-                                    <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Jeannette Lawson</div>
-                                    <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Darla Mckinney</div>
-                                    <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
-                                </div>
-                                <div class="media-body">
-                                    <div class="lgi-heading">Rudolph Perez</div>
-                                    <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                     <div class="tab-pane fade" id="sua-tasks">
                         <ul class="sua-menu list-inline list-unstyled palette-Green-400 bg">
@@ -276,59 +170,6 @@
                             <li><a href=""><i class="zmdi zmdi-check-all"></i> Mark all</a></li>
                             <li><a href="" data-ma-action="sidebar-close"><i class="zmdi zmdi-close"></i> Close</a></li>
                         </ul>
-
-                        <div class="list-group lg-alt c-overflow">
-                            <div class="list-group-item">
-                                <div class="lgi-heading m-b-5">HTML5 Validation Report</div>
-
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%">
-                                        <span class="sr-only">95% Complete (success)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-group-item">
-                                <div class="lgi-heading m-b-5">Google Chrome Extension</div>
-
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">80% Complete (success)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-group-item">
-                                <div class="lgi-heading m-b-5">Social Intranet Projects</div>
-
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                        <span class="sr-only">20% Complete</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-group-item">
-                                <div class="lgi-heading m-b-5">Bootstrap Admin Template</div>
-
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                        <span class="sr-only">60% Complete (warning)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="list-group-item">
-                                <div class="lgi-heading m-b-5">Youtube Client App</div>
-
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                        <span class="sr-only">80% Complete (danger)</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <a href="" class="btn btn-float btn-danger m-btn">
-                            <i class="zmdi zmdi-plus"></i>
-                        </a>
-                    </div>
                 </div>
             </aside>
 
@@ -442,622 +283,42 @@
                     </li>
                 </ul>
             </aside>
-
-            <section id="content">
-                <div class="container">
-                    <div class="card">
-                        <div class="card-header">
-                            <h2>Sales Statistics <small>Vestibulum purus quam scelerisque, mollis nonummy metus</small></h2>
-
-                            <ul class="actions">
-                                <li>
-                                    <a href="">
-                                        <i class="zmdi zmdi-check-all"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="zmdi zmdi-trending-up"></i>
-                                    </a>
-                                </li>
-                                <li class="dropdown">
-                                    <a href="" data-toggle="dropdown">
-                                        <i class="zmdi zmdi-more-vert"></i>
-                                    </a>
-
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li>
-                                            <a href="">Change Date Range</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Change Graph Type</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Other Settings</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="card-body">
-                            <div class="chart-edge">
-                                <div id="curved-line-chart" class="flot-chart "></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="c-grid" class="clearfix" data-columns>
-                        <div class="card c-dark palette-Light-Blue bg">
-                            <div class="card-header">
-                                <h2>Website Impressions <small>Consectetur Ultricies Porta Fringilla</small></h2>
-
-                                 <ul class="actions a-alt">
-                                    <li class="dropdown">
-                                        <a href="" data-toggle="dropdown">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li>
-                                                <a href="">Change Date Range</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Change Graph Type</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Other Settings</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-body card-padding">
-                                <h2 class="m-t-0 m-b-15 c-white">
-                                    <i class="zmdi zmdi-caret-up-circle m-r-5"></i>
-                                    987,453
-                                </h2>
-
-                                <div class="sparkline-1 text-center"></div>
-                            </div>
-                        </div>
-
-                        <div class="card c-dark palette-Green-A700 bg">
-                            <div class="card-header">
-                                <h2>Website Traffics <small>Nullam Adipiscing Pellentesque</small></h2>
-
-                                <ul class="actions a-alt">
-                                    <li class="dropdown">
-                                        <a href="" data-toggle="dropdown">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li>
-                                                <a href="">Change Date Range</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Change Graph Type</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Other Settings</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-body card-padding">
-                                <h2 class="m-t-0 m-b-15 c-white">
-                                    <i class="zmdi zmdi-caret-up-circle m-r-5"></i>
-                                    356,785K
-                                </h2>
-                                <div class="sparkline-2 text-center"></div>
-                            </div>
-                        </div>
-
-                        <div class="card c-dark palette-Blue-Grey bg">
-                            <div class="card-header">
-                                <h2>Total Sales <small>Purus Malesuada Consectetur</small></h2>
-
-                                <ul class="actions a-alt">
-                                    <li class="dropdown">
-                                        <a href="" data-toggle="dropdown">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li>
-                                                <a href="">Change Date Range</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Change Graph Type</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Other Settings</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-body card-padding">
-                                <h2 class="m-t-0 m-b-15 c-white">
-                                    <i class="zmdi zmdi-caret-down-circle m-r-5"></i>
-                                    $458,778
-                                </h2>
-                                <div class="sparkline-3 text-center"></div>
-                            </div>
-                        </div>
-
-                        <div class="card palette-Red-400 bg">
-                            <div class="pie-grid clearfix text-center">
-                                <div class="col-xs-4 col-sm-6 col-md-4 pg-item">
-                                    <div class="easy-pie-2 easy-pie" data-percent="92">
-                                        <span class="ep-value">92</span>
-                                    </div>
-                                    <div class="pgi-title">Email<br> Scheduled</div>
-                                </div>
-                                <div class="col-xs-4 col-sm-6 col-md-4 pg-item">
-                                    <div class="easy-pie-3 easy-pie" data-percent="11">
-                                        <span class="ep-value">11</span>
-                                    </div>
-                                    <div class="pgi-title">Email<br> Bounced</div>
-                                </div>
-                                <div class="col-xs-4 col-sm-6 col-md-4 pg-item">
-                                    <div class="easy-pie-4 easy-pie" data-percent="52">
-                                        <span class="ep-value">52</span>
-                                    </div>
-                                    <div class="pgi-title">Email<br> Opened</div>
-                                </div>
-                                <div class="col-xs-4 col-sm-6 col-md-4 pg-item">
-                                    <div class="easy-pie-2 easy-pie" data-percent="44">
-                                        <span class="ep-value">44</span>
-                                    </div>
-                                    <div class="pgi-title">Storage<br>Remaining</div>
-                                </div>
-                                <div class="col-xs-4 col-sm-6 col-md-4 pg-item">
-                                    <div class="easy-pie-3 easy-pie" data-percent="78">
-                                        <span class="ep-value">78</span>
-                                    </div>
-                                    <div class="pgi-title">Web Page<br> Views</div>
-                                </div>
-                                <div class="col-xs-4 col-sm-6 col-md-4 pg-item">
-                                    <div class="easy-pie-4 easy-pie" data-percent="32">
-                                        <span class="ep-value">32</span>
-                                    </div>
-                                    <div class="pgi-title">Server<br> Processing</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card popular-post">
-                            <div class="card-header ch-img" style="background-image: url(img/headers/4.png); height: 150px;">
-                                <h2>Recent Posts <small>Venenatis Sollicitudin Ipsum</small></h2>
-
-                                <button class="btn palette-Light-Green bg btn-float waves-effect waves-circle waves-float"><i class="zmdi zmdi-plus"></i></button>
-                            </div>
-                            <div class="card-body m-t-20">
-                                <div class="list-group lg-alt">
-                                    <a href="" class="list-group-item media">
-                                        <div class="pull-left">
-                                            <img class="avatar-img" src="img/profile-pics/1.jpg" alt="">
-                                        </div>
-
-                                        <div class="media-body">
-                                            <div class="lgi-heading">David Villa Jacobs</div>
-                                            <small class="lgi-text">Sorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mattis lobortis sapien non posuere</small>
-                                        </div>
-                                    </a>
-
-                                    <a href="" class="list-group-item media">
-                                        <div class="pull-left">
-                                            <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Candice Barnes</div>
-                                            <small class="lgi-text">Quisque non tortor ultricies, posuere elit id, lacinia purus curabitur.</small>
-                                        </div>
-                                    </a>
-
-                                    <a href="" class="list-group-item media">
-                                        <div class="pull-left">
-                                            <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Jeannette Lawson</div>
-                                            <small class="lgi-text">Donec congue tempus ligula, varius hendrerit mi hendrerit sit amet. Duis ac quam sit amet leo feugiat iaculis</small>
-                                        </div>
-                                    </a>
-
-                                    <a href="" class="list-group-item media">
-                                        <div class="pull-left">
-                                            <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Darla Mckinney</div>
-                                            <small class="lgi-text">Duis tincidunt augue nec sem dignissim scelerisque. Vestibulum rhoncus sapien sed nulla aliquam lacinia</small>
-                                        </div>
-                                    </a>
-
-                                    <a href="" class="list-group-item media">
-                                        <div class="pull-left">
-                                            <img class="avatar-img" src="img/profile-pics/2.jpg" alt="">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Rudolph Perez</div>
-                                            <small class="lgi-text">Phasellus a ullamcorper lectus, sit amet viverra quam. In luctus tortor vel nulla pharetra bibendum</small>
-                                        </div>
-                                    </a>
-
-                                    <a href="" class="list-group-item view-more">
-                                        <i class="zmdi zmdi-long-arrow-right"></i> View all
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card c-dark palette-Amber bg">
-                            <div class="card-header p-b-0">
-                                <h2>For the past 30 days <small>Tortor Magna Parturient</small></h2>
-                                <ul class="actions a-alt">
-                                    <li class="dropdown">
-                                        <a href="" data-toggle="dropdown">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li>
-                                                <a href="">Change Date Range</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Change Graph Type</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Other Settings</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="card-body">
-                                <div class="chart-edge">
-                                    <div class="ns-chart flot-chart m-b-20" id="number-stats-chart"></div>
-                                </div>
-
-                                <div class="list-group lg-alt lg-even-white">
-                                    <div class="list-group-item media">
-                                        <div class="pull-right hidden-sm">
-                                            <div class="sparkline-bar-1"></div>
-                                        </div>
-
-                                        <div class="media-body ns-item">
-                                            <small>Page Views</small>
-                                            <h3>47,896,536</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="list-group-item media">
-                                        <div class="pull-right hidden-sm">
-                                            <div class="sparkline-bar-2"></div>
-                                        </div>
-
-                                        <div class="media-body ns-item">
-                                            <small>Site Visitors</small>
-                                            <h3>24,456,799</h3>
-                                        </div>
-                                    </div>
-
-                                    <div class="list-group-item media">
-                                        <div class="pull-right hidden-sm">
-                                            <div class="sparkline-bar-3"></div>
-                                        </div>
-
-                                        <div class="media-body ns-item">
-                                            <small>Total Clicks</small>
-                                            <h3>13,965</h3>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="p-5"></div>
-                            </div>
-                        </div>
-
-                        <div class="card c-dark palette-Grey bg recent-signups">
-                            <div class="card-header p-b-0">
-                                <h2>Most Recent Signups <small>Magna Cursus Malesuada</small></h2>
-                                <ul class="actions a-alt">
-                                    <li class="dropdown">
-                                        <a href="" data-toggle="dropdown">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li>
-                                                <a href="">Change Date Range</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Change Graph Type</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Other Settings</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="sparkline-1 p-30"></div>
-
-                                <ul class="rs-list">
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">B</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img class="avatar-img" src="img/profile-pics/5.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">L</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">A</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img class="avatar-img" src="img/profile-pics/4.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">Z</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">I</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">S</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">C</div>
-                                        </a>
-                                    </li>
-                                     <li>
-                                        <a href="">
-                                            <div class="avatar-char">W</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img class="avatar-img" src="img/profile-pics/3.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">A</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img class="avatar-img" src="img/profile-pics/9.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">N</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">X</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">V</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img class="avatar-img" src="img/profile-pics/7.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img class="avatar-img" src="img/profile-pics/6.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <img class="avatar-img" src="img/profile-pics/8.jpg" alt="">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">F</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">E</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">A</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">A</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">M</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">O</div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="">
-                                            <div class="avatar-char">I</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="card" id="todo-lists">
-                            <div class="card-header ch-dark palette-Purple-300 bg">
-                                <h2>Todo lists <small>Mattis Malesuada Risus</small></h2>
-
-                                <ul class="actions a-alt">
-                                    <li class="dropdown">
-                                        <a href="" data-toggle="dropdown">
-                                            <i class="zmdi zmdi-more-vert"></i>
-                                        </a>
-
-                                        <ul class="dropdown-menu dropdown-menu-right">
-                                            <li>
-                                                <a href="">Change Date Range</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Change Graph Type</a>
-                                            </li>
-                                            <li>
-                                                <a href="">Other Settings</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="card-body">
-                                <div class="list-group lg-alt">
-                                    <div class="list-group-item-header palette-Purple text">Today</div>
-
-                                    <div class="list-group-item media">
-                                        <div class="pull-left">
-                                            <div class="avatar-char ac-check">
-                                                <input class="acc-check" type="checkbox" checked>
-
-                                                <span class="acc-helper palette-Purple-300 bg">C</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Consectetur Sem Sollicitudin</div>
-                                            <small class="lgi-text">08:55 AM</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="list-group-item media">
-                                        <div class="pull-left">
-                                            <div class="avatar-char ac-check">
-                                                <input class="acc-check" type="checkbox" checked>
-
-                                                <span class="acc-helper palette-Purple-300 bg">E</span>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
-                                            <small class="lgi-text">07:32 AM</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="list-group-item-header palette-Light-Blue text">Tomorrow</div>
-
-                                    <div class="list-group-item media">
-                                        <div class="pull-left">
-                                            <div class="avatar-char ac-check">
-                                                <input class="acc-check" type="checkbox">
-
-                                                <span class="acc-helper palette-Light-Blue bg">P</span>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Porta Venenatis Quam</div>
-                                            <small class="lgi-text">10:30 P</small>
-                                        </div>
-                                    </div>
-
-                                    <div class="list-group-item media">
-                                        <div class="pull-left">
-                                            <div class="avatar-char ac-check">
-                                                <input class="acc-check" type="checkbox">
-
-                                                <span class="acc-helper palette-Light-Blue bg">N</span>
-                                            </div>
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="lgi-heading">Nullam quis risus eget urna mollis ornare vel eu leo</div>
-                                            <small class="lgi-text">11:02 PM</small>
-                                        </div>
-                                    </div>
-
-                                    <a href="" class="list-group-item view-more">
-                                        <i class="zmdi zmdi-long-arrow-right"></i> View all
-                                    </a>
-                                </div>
-
-                                <button class="btn palette-Purple-300 bg btn-float waves-effect waves-circle waves-float"><i class="zmdi zmdi-plus"></i></button>
-                            </div>
-                        </div>
-
-                        <div class="card" id="calendar-widget">
-                            <div class="card-header cw-header palette-Teal-400 bg">
-                                <div class="cwh-year"></div>
-                                <div class="cwh-day"></div>
-
-                                <button class="btn palette-Light-Green bg btn-float waves-effect waves-circle waves-float"><i class="zmdi zmdi-plus"></i></button>
-                            </div>
-
-                            <div class="card-body card-padding-sm">
-                                <div id="cw-body"></div>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="card-header ch-img" style="background-image: url(img/demo/note.png); height: 250px;"></div>
-                            <div class="card-header">
-                                <h2>
-                                    Pellentesque Ligula Fringilla
-
-                                    <small>by Malinda Hollaway on 19th June 2015 at 09:10 AM</small>
-                                </h2>
-                            </div>
-                            <div class="card-body card-padding">
-                                <p>Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Nulla vitae elit libero, a pharetra </p>
-
-                                <a href="" class="view-more"><i class="zmdi zmdi-long-arrow-right"></i> View Article...</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+<!-- HIER START HET PAS -->
+<section id="content">
+    <div class="container">
+         @if (session('succes'))
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        {{ session('succes') }}
+            </div>
+        @endif
+         @if (session('info'))
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        {{ session('info') }}
+            </div>
+        @endif
+         @if (session('warning'))
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        {{ session('warning') }}
+            </div>
+        @endif
+         @if (session('danger'))
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        {{ session('danger') }}
+            </div>
+        @endif
+               @yield('content')     
+    </div>
+</section>
 
             <footer id="footer">
-                Copyright &copy; 2015 Material Admin
+                Copyright &copy; 2016 MBIV Development
 
                 <ul class="f-menu">
-                    <li><a href="">Home</a></li>
+                    <li><a href="/index">Home</a></li>
                     <li><a href="">Dashboard</a></li>
                     <li><a href="">Reports</a></li>
                     <li><a href="">Support</a></li>
